@@ -8,8 +8,23 @@
 
     function DriveViewController() {
         const vm = this;
+        const socket = io.connect('http://localhost:1234');
+        
         vm.$onInit = function() {
             console.log('drive me ooooh')
+
+
+
+            socket.on('pong', function (data) {
+                console.log("pong");
+            });
+
+            vm.forward = function() {
+              socket.emit('ping', { duration: 2 });
+
+            };
+
+
 
             var container = document.getElementById('view-canvas');
             var canvas = document.createElement("canvas");
