@@ -9,25 +9,25 @@
     <md-grid-list class="grid" md-cols-xs="3" md-cols-sm="3" md-cols-md="3" md-cols-gt-md="3" md-row-height-gt-md="1:1" md-row-height="2:2">
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1"></md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1">
-            <md-button class="md-fab md-warn" aria-label="Up">
+            <md-button class="md-fab md-warn" aria-label="Up" ng-click="$ctrl.moveForward()">
                 <md-icon ng-bind="'keyboard_arrow_up'" id="arrow-up"></md-icon>
             </md-button>
         </md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1"></md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1">
-            <md-button class="md-fab md-warn" aria-label="Left">
-                <md-icon ng-bind="'keyboard_arrow_left'" id="arrow-left"></md-icon>
+            <md-button class="md-fab md-warn" aria-label="Left" ng-click="$ctrl.turnLeft()">
+                <md-icon ng-bind="'keyboard_arrow_left'" id="arrow-left" ></md-icon>
             </md-button>
         </md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1"></md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1">
-            <md-button class="md-fab md-warn" aria-label="Right">
+            <md-button class="md-fab md-warn" aria-label="Right" ng-click="$ctrl.turnRight()">
                 <md-icon ng-bind="'keyboard_arrow_right'" id="arrow-right"></md-icon>
             </md-button>
         </md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1"></md-grid-tile>
         <md-grid-tile class="tile" md-rowspan="1" md-colspan="1">
-            <md-button class="md-fab md-warn" aria-label="Down">
+            <md-button class="md-fab md-warn" aria-label="Down" ng-click="$ctrl.moveBackward()">
                 <md-icon ng-bind="'keyboard_arrow_down'" id="arrow-down"></md-icon>
             </md-button>
         </md-grid-tile>
