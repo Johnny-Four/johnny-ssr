@@ -10,7 +10,7 @@ const http = require('http');
 const express = require('express');
 
 
-const WebStreamerServer = require('./lib/raspivid');
+const WebStreamerServer = require('./lib/_server.js');
 
 const app = express();
 
