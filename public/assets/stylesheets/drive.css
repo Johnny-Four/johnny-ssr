@@ -31,7 +31,7 @@ canvas {
   align-items: center;
 }
 
-#vr-canvas {
+.vr-container2 {
   width: 50vw;
   height: 20px;
   border: 1px solid black;

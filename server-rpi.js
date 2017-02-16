@@ -38,4 +38,4 @@ app.use('/users', users);
 
 const server = http.createServer(app);
 const silence = new WebStreamerServer(server);
-server.listen(1234);
+server.listen(80);
