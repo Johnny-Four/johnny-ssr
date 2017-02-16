@@ -30,3 +30,13 @@ canvas {
   justify-content: center;
   align-items: center;
 }
+
+#vr-canvas {
+  width: 50vw;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.vr-container {
+  width: 100vw;
+}

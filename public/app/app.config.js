@@ -102,6 +102,11 @@
                 url: '/login',
                 component: 'formView',
             })
+            .state({
+                name: 'vr',
+                url: '/vr',
+                component: 'vrView',
+            })
     }
 
 }());
