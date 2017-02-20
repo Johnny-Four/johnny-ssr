@@ -144,3 +144,8 @@ md-input-container {
 #heroku-notification {
   padding: 1em;
 }
+
+footer p {
+  color: white;
+  text-align: center;
+}
