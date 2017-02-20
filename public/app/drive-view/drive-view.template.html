@@ -3,6 +3,11 @@
     <md-button id="end-btn" class="md-warn md-raised" onclick="wsavc.stopStream()">End</md-button>
 </div>
 <div id="view-canvas" layout="column" layout-align="center center" class="container" ng-model=$ctrl.stream>
+    <p id="heroku-notification">Note: You will only be able to see Bot's live-stream video and drive it via keyboard controls if you SSH into a Raspberry Pi and run
+
+        <a href="https://github.com/Johnny-Four/control-server">this</a>
+        along with it's sister repo linked in the README.
+    </p>
     <ul ng-show="$ctrl.show">
         <img class="bullet" src="../assets/images/nodebot_black.png" alt="">
         <span>Step 1: Click the start button</span>
@@ -13,8 +18,6 @@
         <img class="bullet" src="../assets/images/nodebot_black.png" alt="">
         <span>Step 3: Have fun!</span>
         <br><br>
-        <img class="bullet" src="../assets/images/nodebot_black.png" alt="">
-        <span>Step 4: When finished, click end</span>
     </ul>
 </div>
 <input type="text" id="drive" ng-keydown="$ctrl.keyPress()" ng-keyup="$ctrl.keyRelease()">

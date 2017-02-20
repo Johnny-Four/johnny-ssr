@@ -11,14 +11,11 @@
         vm.$onInit = function() {
             vm.show = true;
             var socket = io.connect('10.6.67.156:3000');
-            console.log('connected');
-
             vm.forward = function() {
                 socket.emit('forward');
             }
 
             vm.stop = function() {
-                console.log('stop');
                 socket.emit('stop');
             }
 
@@ -49,28 +46,22 @@
 
             vm.keyPress = function() {
                 if (event.keyCode === 38) {
-                    console.log('up arrow pressed');
                     socket.emit('forward');
                 } else if (event.keyCode === 40) {
-                    console.log('down arrow pressed');
                     socket.emit('reverse');
                 } else if (event.keyCode === 37) {
-                    console.log('left arrow pressed');
                     socket.emit('left');
                 } else if (event.keyCode === 39) {
-                    console.log('right arrow pressed');
                     socket.emit('right');
                 }
             }
 
             vm.keyRelease = function() {
-                console.log('key released');
                 socket.emit('stop');
             }
 
             vm.driveMe = function() {
                 vm.show = false;
-                console.log('clicked');
                 vm.element = $window.document.getElementById('drive')
                 vm.element.focus()
             }

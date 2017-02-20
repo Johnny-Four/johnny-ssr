@@ -89,7 +89,7 @@ footer {
   justify-content: center;
   background-image: url(../images/bot4.png);
   background-attachment: fixed;
-  background-position: 4em 15em;
+  background-position: 4em 8em;
   background-repeat: no-repeat;
   background-size: 11em;
 }
@@ -139,4 +139,8 @@ md-input-container {
 
 .robot img {
   width: 100%;
+}
+
+#heroku-notification {
+  padding: 1em;
 }
