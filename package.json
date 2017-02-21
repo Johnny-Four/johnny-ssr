@@ -1,9 +1,9 @@
 {
-  "name": "h264-live-stream-demo-server",
+  "name": "johnny-four",
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server-rpi.js",
   "scripts": {
     "install": "cd vendor && npm install",
     "test": "echo \"Error: no test specified\" && exit 1",
