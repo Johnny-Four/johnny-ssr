@@ -1,0 +1,16 @@
+<div class="description-container" layout="column" layout-align="center center">
+    <div class="description">
+        <p>Welcome to the demo page for the Johnny Four robot! The full app requires you to run the program on the Raspberry Pi connected to our robot. Below, the demo video on the left outlines how the full-functioning app works while the video on the right
+            shows Johnny himself!</p>
+    </div>
+
+    <div id="view-canvas" layout="row" layout-align="center end" class="container" ng-model=$ctrl.stream>
+        <iframe id="videodemo" src="https://www.youtube.com/embed/n_1Qv6dOwUs?ecver=1&loop=1?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+        <div class="col2" layout="column" layout-align="center center">
+            <md-button class="md-warn github" aria-label="Eat cake" href="https://github.com/Johnny-Four/johnny-ssr">
+                <i class="fa fa-github fa-5x" aria-hidden="true"></i>See Github
+            </md-button>
+            <iframe id="robotdriving" src="https://www.youtube.com/embed/z0V29zLvRyE?ecver=1loop=1&amp;autoplay=1&amp" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
